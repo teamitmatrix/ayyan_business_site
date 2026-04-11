@@ -121,6 +121,24 @@
       flex-shrink: 0;
     }
 
+    /* Profile picture */
+    .card__header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .card__avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      border: 3px solid var(--light);
+      box-shadow: 0 2px 10px rgba(27,45,110,.15);
+      flex-shrink: 0;
+    }
+
     /* Identity */
     .card__identity { display: flex; flex-direction: column; gap: 4px; }
 
@@ -277,9 +295,12 @@
         </div>
 
         <!-- Identity -->
-        <div class="card__identity">
-          <h1 class="card__name">Ali Ayyan Siddiqui</h1>
-          <p class="card__title">Chief Executive Officer</p>
+        <div class="card__header">
+          <img class="card__avatar" src="./Ayyan.png" alt="Ali Ayyan Siddiqui" />
+          <div class="card__identity">
+            <h1 class="card__name">Ali Ayyan Siddiqui</h1>
+            <p class="card__title">Chief Executive Officer</p>
+          </div>
         </div>
 
         <div class="card__divider" aria-hidden="true"></div>
